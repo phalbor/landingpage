@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trade Smarter with AUS Global Forex</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css" />
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+  }
+
+  body {
+    background: linear-gradient(-45deg, #001f3f, #0074D9, #001f3f, #0074D9);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  .card {
+    background: rgba(0, 0, 0, 0.85);
+    padding: 2em;
+    border-radius: 16px;
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+    backdrop-filter: blur(8px);
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+
+  h1 {
+    margin-top: 0;
+    font-size: 1.9em;
+    letter-spacing: 1px;
+  }
+
+  p {
+    font-size: 0.95em;
+    color: #ccc;
+    margin-bottom: 1.5em;
+  }
+
+  input {
+    width: 100%;
+    padding: 0.75em;
+    margin: 0.5em 0;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+  }
+
+  input::placeholder {
+    color: #bbb;
+  }
+
+  .iti {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+    padding: 0.75em;
+    background: #00b894;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 1em;
+    transition: background 0.3s ease, transform 0.2s;
+  }
+
+  button:hover {
+    background: #009975;
+    transform: scale(1.03);
+  }
+
+  small {
+    display: block;
+    margin-top: 1em;
+    color: #aaa;
+    font-size: 0.8em;
+  }
+
+  .logo {
+    margin-bottom: 1em;
+  }
+
+  .logo img {
+    max-width: 120px;
+  }
+
+  .highlight {
+    color: #00b894;
+    font-weight: bold;
+  }
+
+  .limited-offer {
+    margin-top: 0.5em;
+    font-size: 0.9em;
+    color: #ff7675;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Forex_logo.svg/1200px-Forex_logo.svg.png" alt="AUS Global Forex">
+    </div>
+    <h1>Trade Smarter with <span class="highlight">AUS Global Forex</span></h1>
+    <p>Get exclusive market insights, real-time updates, and start trading confidently with a trusted global partner.</p>
+    <div class="limited-offer">🔥 Limited spots available – sign up now!</div>
+    <form action="https://formspree.io/f/yourformid" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="text" name="country" placeholder="Country" required />
+      <input id="phone" name="phone" type="tel" placeholder="Phone Number" required />
+      <input type="email" name="email" placeholder="Email Address" required />
+      <button type="submit">Get Started Now</button>
+    </form>
+    <small>We value your privacy. Your info stays confidential.</small>
+  </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+<script>
+  var input = document.querySelector("#phone");
+  window.intlTelInput(input, {
+    initialCountry: "auto",
+    geoIpLookup: function(callback) {
+      fetch('https://ipapi.co/json')
+        .then(res => res.json())
+        .then(data => callback(data.country_code))
+        .catch(() => callback('us'));
+    },
+    separateDialCode: true,
+    utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js"
+  });
+</script>
+</body>
+</html>
