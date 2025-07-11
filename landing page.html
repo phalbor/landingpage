@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Master the Market | AUS Global Forex</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.min.css" />
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    overflow-x: hidden;
+  }
+
+  body {
+    background: linear-gradient(-45deg, #001f3f, #0074D9, #001f3f, #0074D9);
+    background-size: 400% 400%;
+    animation: gradientBG 12s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  @keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  .card {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 2.5em;
+    border-radius: 16px;
+    max-width: 420px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.6);
+    backdrop-filter: blur(10px);
+    animation: fadeInUp 1.2s ease forwards;
+    opacity: 0;
+  }
+
+  @keyframes fadeInUp {
+    from { transform: translateY(30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+
+  .logo img {
+    max-width: 140px;
+    margin-bottom: 1em;
+  }
+
+  h1 {
+    font-size: 1.9em;
+    margin-bottom: 0.3em;
+    letter-spacing: 1px;
+  }
+
+  p {
+    font-size: 1em;
+    color: #ccc;
+    margin-bottom: 1.8em;
+  }
+
+  form input, form select {
+    width: 100%;
+    padding: 0.75em;
+    margin: 0.4em 0;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 0.95em;
+  }
+
+  input::placeholder {
+    color: #bbb;
+  }
+
+  .iti {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+    padding: 0.8em;
+    background: linear-gradient(90deg, #0074D9, #00aaff);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 1em;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  }
+
+  .urgency {
+    margin-top: 1em;
+    font-size: 0.9em;
+    color: #00aaff;
+  }
+
+  small {
+    display: block;
+    margin-top: 1em;
+    color: #999;
+    font-size: 0.8em;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Forex_logo.svg/1200px-Forex_logo.svg.png" alt="AUS Global Forex">
+    </div>
+    <h1>Master the Market</h1>
+    <p>Real-time strategies, exclusive insights & expert tools. Take control of your forex trading journey today.</p>
+    <form action="https://formspree.io/f/yourformid" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="text" name="country" placeholder="Country" required />
+      <input id="phone" name="phone" type="tel" placeholder="Phone Number" required />
+      <input type="email" name="email" placeholder="Email Address" required />
+      <button type="submit">Get Instant Access</button>
+    </form>
+    <div class="urgency">✅ Join 50,000+ traders. Limited early access.</div>
+    <small>We respect your privacy. Your data stays confidential.</small>
+  </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+<script>
+  var input = document.querySelector("#phone");
+  window.intlTelInput(input, {
+    initialCountry: "auto",
+    geoIpLookup: function(callback) {
+      fetch('https://ipapi.co/json')
+        .then(res => res.json())
+        .then(data => callback(data.country_code))
+        .catch(() => callback('us'));
+    },
+    separateDialCode: true,
+    utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js"
+  });
+</script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUS Global Forex Trading | Premium Trading Solutions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        body {
+            background-color: #0a0e17;
+            color: #ffffff;
+            line-height: 1.6;
+            overflow-x: hidden;
+            position: relative;
+        }
+        
+        /* Animated Background Elements */
+        .background-elements {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            overflow: hidden;
+        }
+        
+        .particle {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(0, 200, 150, 0.1);
+            animation: float 15s infinite linear;
+        }
+        
+        .particle:nth-child(1) {
+            width: 600px;
+            height: 600px;
+            top: -100px;
+            left: -100px;
+            background: radial-gradient(circle, rgba(0,86,179,0.1) 0%, rgba(0,86,179,0) 70%);
+        }
+        
+        .particle:nth-child(2) {
+            width: 400px;
+            height: 400px;
+            bottom: -150px;
+            right: -100px;
+            animation-delay: 2s;
+            animation-duration: 20s;
+            background: radial-gradient(circle, rgba(255,107,0,0.1) 0%, rgba(255,107,0,0) 70%);
+        }
+        
+        .particle:nth-child(3) {
+            width: 300px;
+            height: 300px;
+            top: 40%;
+            left: 30%;
+            animation-delay: 4s;
+            animation-duration: 25s;
+            background: radial-gradient(circle, rgba(0,200,150,0.1) 0%, rgba(0,200,150,0) 70%);
+        }
+        
+        @keyframes float {
+            0% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+            50% {
+                transform: translate(50px, 50px) rotate(180deg);
+            }
+            100% {
+                transform: translate(0, 0) rotate(360deg);
+            }
+        }
+        
+        /* Currency Price Ticker */
+        .ticker-wrap {
+            position: relative;
+            background: rgba(0, 0, 0, 0.7);
+            overflow: hidden;
+            height: 40px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .ticker {
+            display: inline-block;
+            white-space: nowrap;
+            animation: ticker 60s linear infinite;
+        }
+        
+        .ticker-item {
+            display: inline-flex;
+            align-items: center;
+            padding: 0 30px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        
+        .positive {
+            color: #00c896;
+        }
+        
+        .negative {
+            color: #ff4d4d;
+        }
+        
+        @keyframes ticker {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+        
+        /* Header */
+        header {
+            background-color: rgba(10, 14, 23, 0.9);
+            position: fixed;
+            width: 100%;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: #ffffff;
+        }
+        
+        .logo span {
+            color: #00c896;
+        }
+        
+        .nav-links {
+            display: flex;
+        }
+        
+        .nav-links li {
+            margin-left: 30px;
+        }
+        
+        .nav-links a {
+            color: #ffffff;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .nav-links a:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: #00c896;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-links a:hover:after {
+            width: 100%;
+        }
+        
+        .nav-links a:hover {
+            color: #00c896;
+        }
+        
+        .mobile-menu {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: white;
+        }
+        
+        /* Hero Section */
+        .hero {
+            padding: 200px 0 100px;
+            text-align: center;
+            position: relative;
+            background: linear-gradient(135deg, rgba(10, 14, 23, 0.9) 0%, rgba(0, 86, 179, 0.5) 100%);
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero h1 {
+            font-size: 52px;
+            margin-bottom: 20px;
+            font-weight: 700;
+            line-height: 1.2;
+            background: linear-gradient(to right, #ffffff 0%, #00c896 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: textGlow 3s ease-in-out infinite alternate;
+        }
+        
+        @keyframes textGlow {
+            0% {
+                text-shadow: 0 0 10px rgba(0, 200, 150, 0.3);
+            }
+            100% {
+                text-shadow: 0 0 20px rgba(0, 200, 150, 0.7);
+            }
+        }
+        
+        .hero p {
+            font-size: 20px;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 40px;
+        }
+        
+        /* Trading Widget */
+        .trading-widget {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 800px;
+            margin: 40px auto 0;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            animation: pulse 6s infinite alternate;
+        }
+        
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(0, 200, 150, 0.4);
+            }
+            100% {
+                box-shadow: 0 0 0 20px rgba(0, 200, 150, 0);
+            }
+        }
+        
+        .widget-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            color: #ffffff;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 10px;
+        }
+        
+        .currency-pairs {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+        }
+        
+        .currency-pair {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 15px;
+            border-radius: 5px;
+            color: white;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        .currency-pair:hover {
+            transform: translateY(-5px);
+            background: rgba(0, 86, 179, 0.3);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .pair-name {
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: #00c896;
+        }
+        
+        .pair-price {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+        
+        .pair-change {
+            font-size: 14px;
+        }
+        
+        /* Lead Capture Form */
+        .lead-form {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            padding: 30px;
+            max-width: 500px;
+            margin: 60px auto 0;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            animation: slideUp 1s ease-out;
+        }
+        
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .lead-form h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #ffffff;
+            text-align: center;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #ffffff;
+        }
+        
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            font-size: 16px;
+            background: rgba(0, 0, 0, 0.3);
+            color: #ffffff;
+            transition: all 0.3s ease;
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus {
+            border-color: #00c896;
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(0, 200, 150, 0.2);
+        }
+        
+        .submit-btn {
+            width: 100%;
+            padding: 14px;
+            background: linear-gradient(135deg, #00c896 0%, #008b6b 100%);
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .submit-btn:hover {
+            background: linear-gradient(135deg, #00a47d 0%, #006a52 100%);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* Features Section */
+        .features {
+            padding: 100px 0;
+            background: #ffffff;
+            color: #333333;
+            position: relative;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .section-title h2 {
+            font-size: 36px;
+            color: #0a0e17;
+            margin-bottom: 15px;
+        }
+        
+        .section-title p {
+            color: #666666;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .feature-card {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .feature-card:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, #0056b3 0%, #00c896 100%);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-card:hover:after {
+            transform: scaleX(1);
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .feature-icon {
+            font-size: 50px;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #0056b3 0%, #00c896 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .feature-card h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: #0a0e17;
+        }
+        
+        /* Trading Platforms */
+        .platforms {
+            padding: 100px 0;
+            background: #f5f7fa;
+            position: relative;
+        }
+        
+        .platform-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .platform-card {
+            background: #ffffff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .platform-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .platform-image {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .platform-content {
+            padding: 30px;
+        }
+        
+        .platform-content h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #0a0e17;
+        }
+        
+        .platform-content ul {
+            margin: 20px 0;
+        }
+        
+        .platform-content ul li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 25px;
+        }
+        
+        .platform-content ul li:before {
+            content: '\f00c';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: #00c896;
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            padding: 100px 0;
+            background: #0a0e17;
+            color: #ffffff;
+            position: relative;
+        }
+        
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .testimonial-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 10px;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.15);
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        
+        .testimonial-text:before {
+            content: '\201C';
+            font-size: 60px;
+            position: absolute;
+            left: -20px;
+            top: -20px;
+            color: rgba(255, 255, 255, 0.1);
+            font-family: Georgia, serif;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+        
+        .author-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-right: 15px;
+            object-fit: cover;
+            border: 3px solid #00c896;
+        }
+        
+        .author-info h4 {
+            font-size: 18px;
+            margin-bottom: 5px;
+            color: #ffffff;
+        }
+        
+        .author-info p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 14px;
+        }
+        
+        /* CTA Section */
+        .cta {
+            padding: 100px 0;
+            background: linear-gradient(135deg, #0056b3 0%, #003366 100%);
+            color: #ffffff;
+            text-align: center;
+            position: relative;
+        }
+        
+        .cta h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        
+        .cta p {
+            max-width: 700px;
+            margin: 0 auto 40px;
+            font-size: 18px;
+            opacity: 0.9;
+        }
+        
+        /* Footer */
+        footer {
+            background: #0a0e17;
+            color: #ffffff;
+            padding: 80px 0 20px;
+            position: relative;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-column h3 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #ffffff;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-column h3:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background: #00c896;
+        }
+        
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-column ul li a {
+            color: #bbbbbb;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-column ul li a:hover {
+            color: #00c896;
+        }
+        
+        .contact-info p {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .contact-info i {
+            margin-right: 10px;
+            color: #00c896;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: #ffffff;
+            transition: all 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            background: #00c896;
+            transform: translateY(-3px);
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #bbbbbb;
+            font-size: 14px;
+        }
+        
+        .disclaimer {
+            font-size: 12px;
+            color: #888888;
+            margin-top: 20px;
+            line-height: 1.5;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                background: rgba(10, 14, 23, 0.95);
+                flex-direction: column;
+                padding: 20px;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            }
+            
+            .nav-links.active {
+                display: flex;
+            }
+            
+            .nav-links li {
+                margin: 15px 0;
+            }
+            
+            .mobile-menu {
+                display: block;
+            }
+            
+            .hero {
+                padding: 150px 0 80px;
+            }
+            
+            .hero h1 {
+                font-size: 36px;
+            }
+            
+            .hero p {
+                font-size: 18px;
+            }
+            
+            .trading-widget {
+                padding: 15px;
+            }
+            
+            .currency-pairs {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .currency-pairs {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Background Elements -->
+    <div class="background-elements">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+    
+    <!-- Currency Ticker -->
+    <div class="ticker-wrap">
+        <div class="ticker">
+            <div class="ticker-item">EUR/USD <span class="positive">1.0854 ▲ 0.12%</span></div>
+            <div class="ticker-item">GBP/USD <span class="positive">1.2702 ▲ 0.25%</span></div>
+            <div class="ticker-item">USD/JPY <span class="negative">150.35 ▼ 0.18%</span></div>
+            <div class="ticker-item">AUD/USD <span class="positive">0.6553 ▲ 0.31%</span></div>
+            <div class="ticker-item">USD/CAD <span class="negative">1.3489 ▼ 0.09%</span></div>
+            <div class="ticker-item">GOLD <span class="positive">1,832.50 ▲ 0.42%</span></div>
+            <div class="ticker-item">OIL <span class="negative">76.24 ▼ 0.35%</span></div>
+            <div class="ticker-item">BTC/USD <span class="positive">42,350 ▲ 1.85%</span></div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">AUS<span>Global</span></a>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#platforms">Platforms</a></li>
+                    <li><a href="#form">Open Account</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                </ul>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="form">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Premium Forex Trading with <span>AUS Global</span></h1>
+                <p>Access 100+ instruments with tight spreads, lightning execution, and award-winning platforms.</p>
+                
+                <!-- Lead Capture Form -->
+                <div class="lead-form">
+                    <h2>Open Your Trading Account</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="country">Country</label>
+                            <select id="country" name="country" required>
+                                <option value="" disabled selected>Select Country</option>
+                                <option value="USA">United States</option>
+                                <option value="UK">United Kingdom</option>
+                                <option value="Australia">Australia</option>
+                                <option value="Canada">Canada</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+1 123 456 7890" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                        </div>
+                        <button type="submit" class="submit-btn">Get Started Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Trade With AUS Global?</h2>
+                <p>We provide traders with everything they need to succeed in the global forex markets</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Competitive Spreads</h3>
+                    <p>Trade with some of the tightest spreads in the industry across all major currency pairs.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Lightning Execution</h3>
+                    <p>Experience execution speeds under 50ms with our advanced trading infrastructure.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Funds Protection</h3>
+                    <p>Client funds held in segregated accounts with top-tier banks for maximum security.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trading Platforms -->
+    <section class="platforms" id="platforms">
+        <div class="container">
+            <div class="section-title">
+                <h2>Advanced Trading Platforms</h2>
+                <p>Access global markets with our powerful, user-friendly trading platforms</p>
+            </div>
+            <div class="platform-cards">
+                <div class="platform-card">
+                    <div class="platform-image" style="background-image: url('https://via.placeholder.com/600x400?text=MetaTrader+4');"></div>
+                    <div class="platform-content">
+                        <h3>MetaTrader 4</h3>
+                        <p>The world's most popular forex trading platform with advanced charting and automated trading.</p>
+                        <ul>
+                            <li>User-friendly interface</li>
+                            <li>Advanced technical analysis</li>
+                            <li>Expert Advisors (EAs)</li>
+                            <li>Mobile & desktop versions</li>
+                        </ul>
+                        <a href="#" class="submit-btn" style="display: inline-block; width: auto; padding: 10px 20px;">Download MT4</a>
+                    </div>
+                </div>
+                <div class="platform-card">
+                    <div class="platform-image" style="background-image: url('https://via.placeholder.com/600x400?text=MetaTrader+5');"></div>
+                    <div class="platform-content">
+                        <h3>MetaTrader 5</h3>
+                        <p>The next generation platform with additional timeframes, order types, and market depth.</p>
+                        <ul>
+                            <li>More technical indicators</li>
+                            <li>Economic calendar</li>
+                            <li>Depth of Market</li>
+                            <li>Hedging capability</li>
+                        </ul>
+                        <a href="#" class="submit-btn" style="display: inline-block; width: auto; padding: 10px 20px;">Download MT5</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>What Our Clients Say</h2>
+                <p>Don't just take our word for it. Here's what our traders have to say about us.</p>
+            </div>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        <p>"I've been trading with AUS Global for over 3 years. Their execution speeds are incredible and their customer support is always helpful. Highly recommended for serious traders."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="James Wilson" class="author-avatar">
+                        <div class="author-info">
+                            <h4>James Wilson</h4>
+                            <p>Professional Trader</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        <p>"As a beginner, I really appreciated the educational resources AUS Global provides. Their webinars helped me understand market analysis and develop my trading strategy."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Johnson" class="author-avatar">
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>Swing Trader</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Start Trading?</h2>
+            <p>Join thousands of traders who trust AUS Global for their forex trading needs. Open your account in minutes and access global markets.</p>
+            <a href="#form" class="submit-btn" style="display: inline-block; width: auto; padding: 12px 30px;">Open Live Account</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>AUS Global</h3>
+                    <p>Providing premium forex trading services since 2010. Regulated and trusted by traders worldwide.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Trading</h3>
+                    <ul>
+                        <li><a href="#">Forex</a></li>
+                        <li><a href="#">Commodities</a></li>
+                        <li><a href="#">Indices</a></li>
+                        <li><a href="#">Cryptocurrencies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Regulation</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Education</h3>
+                    <ul>
+                        <li><a href="#">Trading Guides</a></li>
+                        <li><a href="#">Video Tutorials</a></li>
+                        <li><a href="#">Webinars</a></li>
+                        <li><a href="#">Market Analysis</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 AUS Global Forex Trading. All rights reserved.</p>
+                <div class="disclaimer">
+                    <p>Disclaimer: Trading forex and CFDs carries a high level of risk and may not be suitable for all investors. Past performance is not indicative of future results. The information on this website is for educational purposes only and should not be considered financial advice.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        document.querySelector('.mobile-menu').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+        
+        // Smooth Scrolling for Anchor Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                
+                // Close mobile menu if open
+                if (window.innerWidth <= 768) {
+                    document.querySelector('.nav-links').classList.remove('active');
+                }
+            });
+        });
+        
+        // Form Submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const country = document.getElementById('country').value;
+            const phone = document.getElementById('phone').value;
+            const email = document.getElementById('email').value;
+            
+            // Log data (Replace with AJAX/Fetch to backend)
+            console.log('Lead Captured:', { name, country, phone, email });
+            
+            // Show success message
+            alert('Thank you! Your account application has been received. We will contact you shortly.');
+            
+            // Reset form
+            this.reset();
+        });
+        
+        // Animate Currency Prices (demo purposes)
+        function animatePrices() {
+            const pairs = document.querySelectorAll('.currency-pair');
+            
+            pairs.forEach(pair => {
+                const priceElement = pair.querySelector('.pair-price');
+                const changeElement = pair.querySelector('.pair-change');
+                
+                if (priceElement && changeElement) {
+                    const currentPrice = parseFloat(priceElement.textContent);
+                    const change = (Math.random() - 0.5) * 0.01;
+                    const newPrice = currentPrice + change;
+                    const isPositive = change >= 0;
+                    
+                    priceElement.textContent = newPrice.toFixed(isPositive ? 4 : 2);
+                    
+                    if (isPositive) {
+                        changeElement.textContent = `+${Math.abs(change).toFixed(2)}%`;
+                        changeElement.className = 'pair-change positive';
+                    } else {
+                        changeElement.textContent = `-${Math.abs(change).toFixed(2)}%`;
+                        changeElement.className = 'pair-change negative';
+                    }
+                }
+            });
+        }
+        
+        setInterval(animatePrices, 3000);
+        
+        // Update Ticker Prices (demo purposes)
+        function updateTicker() {
+            const tickerItems = document.querySelectorAll('.ticker-item');
+            
+            tickerItems.forEach(item => {
+                const priceElement = item.querySelector('span');
+                if (priceElement) {
+                    const currentText = priceElement.textContent;
+                    const parts = currentText.split(' ');
+                    let price = parseFloat(parts[0]);
+                    const change = (Math.random() - 0.5) * 0.2;
+                    const isPositive = change >= 0;
+                    
+                    if (parts[0].includes(',')) {
+                        price = parseFloat(parts[0].replace(',', ''));
+                        price += change;
+                        parts[0] = price.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+                    } else {
+                        price += change;
+                        parts[0] = price.toFixed(isPositive ? 4 : 2);
+                    }
+                    
+                    parts[1] = isPositive ? '▲' : '▼';
+                    parts[2] = `${Math.abs(change).toFixed(2)}%`;
+                    
+                    priceElement.textContent = parts.join(' ');
+                    priceElement.className = isPositive ? 'positive' : 'negative';
+                }
+            });
+        }
+        
+        setInterval(updateTicker, 5000);
+    </script>
+</body>
+</html>
